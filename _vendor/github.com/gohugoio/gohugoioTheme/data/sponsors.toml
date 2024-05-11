@@ -1,0 +1,20 @@
+[[banners]]
+    name         = "Linode"
+    link         = "https://www.linode.com/"
+    logo         = "images/sponsors/linode-logo.svg"
+    utm_campaign = "hugosponsor"
+    bgcolor      = "#ffffff"
+
+[[banners]]
+    name          = "Your Company?"
+    link          = "https://bep.is/en/hugo-sponsor-2023-01/"
+    utm_campaign  = "hugosponsor"
+    show_on_hover = true
+    bgcolor       = "#4e4f4f"
+
+[[banners]]
+    name          = "Your Company?"
+    link          = "https://bep.is/en/hugo-sponsor-2023-01/"
+    utm_campaign  = "hugosponsor"
+    show_on_hover = true
+    bgcolor       = "#4e4f4f"
