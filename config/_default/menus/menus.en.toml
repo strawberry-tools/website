@@ -143,4 +143,4 @@ name = 'GitHub'
 weight = 200
 identifier = 'github'
 post = 'external'
-url = 'https://github.com/gohugoio/hugo'
+url = 'https://github.com/strawberry-tools/strawberry'

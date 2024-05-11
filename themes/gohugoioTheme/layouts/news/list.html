@@ -17,7 +17,7 @@
       {{ $news_items := slice }}
 
       {{/* Get releases from GitHub. */}}
-      {{ $u := "https://api.github.com/repos/gohugoio/hugo/releases" }}
+      {{ $u := "https://api.github.com/repos/strawberry-tools/strawberry/releases" }}
       {{ $releases := partial "utilities/get-remote-data.html" $u }}
       {{ $releases = where $releases "draft" false }}
       {{ $releases = where $releases "prerelease" false }}

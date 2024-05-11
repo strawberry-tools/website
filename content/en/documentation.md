@@ -1,7 +1,7 @@
 ---
-title: Hugo Documentation
+title: Strawberry Documentation
 linkTitle: Hugo
-description: Hugo is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, spf13 and friends.
+description: Strawberry is the world's fastest static website engine. It's written in Go (aka Golang) and developed by bep, spf13 and friends.
 menu:
   main:
     weight: 1
