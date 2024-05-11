@@ -1,6 +1,6 @@
 /.idea
 /.vscode
-/public
+/src/public
 /dist
 node_modules
 nohup.out
