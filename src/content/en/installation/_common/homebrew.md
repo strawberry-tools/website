@@ -4,10 +4,10 @@
 
 ### Homebrew
 
-[Homebrew] is a free and open-source package manager for macOS and Linux. To install the extended edition of Hugo:
+[Homebrew] is a free and open-source package manager for macOS and Linux. To install Strawberry:
 
 ```sh
-brew install hugo
+brew install strawberry-tools/tap/strawberry
 ```
 
 [Homebrew]: https://brew.sh/

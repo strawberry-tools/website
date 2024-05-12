@@ -4,10 +4,10 @@
 
 ## Build from source
 
-To build the extended edition of Hugo from source you must:
+To build Strawberry from source you must:
 
 1. Install [Git]
-1. Install [Go] version 1.20 or later
+1. Install [Go] version 1.21 or later
 1. Install a C compiler, either [GCC] or [Clang]
 1. Update your `PATH` environment variable as described in the [Go documentation]
 
@@ -16,8 +16,8 @@ To build the extended edition of Hugo from source you must:
 Then build and test:
 
 ```sh
-CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
-hugo version
+CGO_ENABLED=1 go install github.com/strawberry-tools/strawberry@latest
+strawberry version
 ```
 
 [Clang]: https://clang.llvm.org/
