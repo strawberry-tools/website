@@ -1,6 +1,6 @@
 ---
 title: Quick start
-description: Learn to create a Hugo site in minutes.
+description: Learn to create a Strawberry site in minutes.
 categories: [getting started]
 keywords: [quick start,usage]
 menu:
@@ -24,7 +24,7 @@ In this tutorial you will:
 
 Before you begin this tutorial you must:
 
-1. [Install Hugo] (extended edition, {{% param "minVersion" %}} or later)
+1. [Install Strawberry]
 1. [Install Git]
 
 You must also be comfortable working from the command line.
@@ -46,31 +46,31 @@ PowerShell and Windows PowerShell [are different applications].
 [are different applications]: https://learn.microsoft.com/en-us/powershell/scripting/whats-new/differences-from-windows-powershell?view=powershell-7.3
 {{% /note %}}
 
-Verify that you have installed Hugo {{% param "minVersion" %}} or later.
+Verify that you have installed Strawberry.
 
 ```text
-hugo version
+strawberry version
 ```
 
-Run these commands to create a Hugo site with the [Ananke] theme. The next section provides an explanation of each command.
+Run these commands to create a Strawberry site with the [Ananke] theme. The next section provides an explanation of each command.
 
 ```text
-hugo new site quickstart
+strawberry new site quickstart
 cd quickstart
 git init
 git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
 echo "theme = 'ananke'" >> hugo.toml
-hugo server
+strawberry server
 ```
 
-View your site at the URL displayed in your terminal. Press `Ctrl + C` to stop Hugo's development server.
+View your site at the URL displayed in your terminal. Press `Ctrl + C` to stop Strawberry's development server.
 
 ### Explanation of commands
 
 Create the [directory structure] for your project in the `quickstart` directory.
 
 ```text
-hugo new site quickstart
+strawberry new site quickstart
 ```
 
 Change the current directory to the root of your project.
@@ -97,23 +97,23 @@ Append a line to the site configuration file, indicating the current theme.
 echo "theme = 'ananke'" >> hugo.toml
 ```
 
-Start Hugo's development server to view the site.
+Start Strawberry's development server to view the site.
 
 ```text
-hugo server
+strawberry server
 ```
 
-Press `Ctrl + C` to stop Hugo's development server.
+Press `Ctrl + C` to stop Strawberry's development server.
 
 ## Add content
 
 Add a new page to your site.
 
 ```text
-hugo new content posts/my-first-post.md
+strawberry new content posts/my-first-post.md
 ```
 
-Hugo created the file in the `content/posts` directory. Open the file with your editor.
+Strawberry created the file in the `content/posts` directory. Open the file with your editor.
 
 ```text
 +++
@@ -123,7 +123,7 @@ draft = true
 +++
 ```
 
-Notice the `draft` value in the [front matter] is `true`. By default, Hugo does not publish draft content when you build the site. Learn more about [draft, future, and expired content].
+Notice the `draft` value in the [front matter] is `true`. By default, Strawberry does not publish draft content when you build the site. Learn more about [draft, future, and expired content].
 
 Add some [Markdown] to the body of the post, but do not change the `draft` value.
 
@@ -139,14 +139,14 @@ draft = true
 
 This is **bold** text, and this is *emphasized* text.
 
-Visit the [Hugo](https://gohugo.io) website!
+Visit the [Strawberry](https://www.Strawberry.Tools) website!
 ```
 
-Save the file, then start Hugo’s development server to view the site. You can run either of the following commands to include draft content.
+Save the file, then start Strawberrys development server to view the site. You can run either of the following commands to include draft content.
 
 ```text
-hugo server --buildDrafts
-hugo server -D
+strawberry server --buildDrafts
+strawberry server -D
 ```
 
 View your site at the URL displayed in your terminal. Keep the development server running as you continue to add and change content.
@@ -154,7 +154,7 @@ View your site at the URL displayed in your terminal. Keep the development serve
 When satisfied with your new content, set the front matter `draft` parameter to `false`.
 
 {{% note %}}
-Hugo's rendering engine conforms to the CommonMark [specification] for Markdown. The CommonMark organization provides a useful [live testing tool] powered by the reference implementation.
+Strawberry's rendering engine conforms to the CommonMark [specification] for Markdown. The CommonMark organization provides a useful [live testing tool] powered by the reference implementation.
 
 [live testing tool]: https://spec.commonmark.org/dingus/
 [specification]: https://spec.commonmark.org/
@@ -167,7 +167,7 @@ With your editor, open the [site configuration] file (`hugo.toml`) in the root o
 ```text
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My New Strawberry Site'
 theme = 'ananke'
 ```
 
@@ -179,10 +179,10 @@ Make the following changes:
 
 3. Set the `title` for your production site.
 
-Start Hugo's development server to see your changes, remembering to include draft content.
+Start Strawberry's development server to see your changes, remembering to include draft content.
 
 ```text
-hugo server -D
+strawberry server -D
 ```
 
 {{% note %}}
@@ -199,23 +199,23 @@ Most theme authors provide configuration guidelines and options. Make sure to vi
 
 In this step you will _publish_ your site, but you will not _deploy_ it.
 
-When you _publish_ your site, Hugo creates the entire static site in the `public` directory in the root of your project. This includes the HTML files, and assets such as images, CSS files, and JavaScript files.
+When you _publish_ your site, Strawberry creates the entire static site in the `public` directory in the root of your project. This includes the HTML files, and assets such as images, CSS files, and JavaScript files.
 
 When you publish your site, you typically do _not_ want to include [draft, future, or expired content]. The command is simple.
 
 ```text
-hugo
+strawberry
 ```
 
 To learn how to _deploy_ your site, see the [hosting and deployment] section.
 
 ## Ask for help
 
-Hugo's [forum] is an active community of users and developers who answer questions, share knowledge, and provide examples. A quick search of over 20,000 topics will often answer your question. Please be sure to read about [requesting help] before asking your first question.
+Strawberry's [forum] is an active community of users and developers who answer questions, share knowledge, and provide examples. A quick search of over 20,000 topics will often answer your question. Please be sure to read about [requesting help] before asking your first question.
 
 ## Other resources
 
-For other resources to help you learn Hugo, including books and video tutorials, see the [external learning resources](/getting-started/external-learning-resources/) page.
+For other resources to help you learn Strawberry, including books and video tutorials, see the [external learning resources](/getting-started/external-learning-resources/) page.
 
 [Ananke]: https://github.com/theNewDynamic/gohugo-theme-ananke
 [directory structure]: /getting-started/directory-structure/
@@ -223,12 +223,10 @@ For other resources to help you learn Hugo, including books and video tutorials,
 [draft, future, or expired content]: /getting-started/usage/#draft-future-and-expired-content
 [external learning resources]:/getting-started/external-learning-resources/
 [forum]: https://discourse.gohugo.io/
-[forum]: https://discourse.gohugo.io/
 [front matter]: /content-management/front-matter/
 [Git submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [hosting and deployment]: /hosting-and-deployment/
 [Install Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-[Install Hugo]: /installation/
-[Requesting Help]: https://discourse.gohugo.io/t/requesting-help/9132
+[Install Strawberry]: /installation/
 [Requesting Help]: https://discourse.gohugo.io/t/requesting-help/9132
 [site configuration]: /getting-started/configuration/
