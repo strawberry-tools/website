@@ -96,8 +96,6 @@ Dart Sass is compatible with Hugo v0.114.0 and later.
 
 If you have been using Embedded Dart Sass[^1] with Hugo v0.113.0 and earlier, uninstall Embedded Dart Sass, then install Dart Sass. If you have installed both, Hugo will use Dart Sass.
 
-If you install Hugo as a [Snap package] there is no need to install Dart Sass. The Hugo Snap package includes Dart Sass.
-
 [^1]: In 2023, the Sass team deprecated Embedded Dart Sass in favor of Dart Sass.
 
 ### Installing in a development environment

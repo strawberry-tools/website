@@ -15,8 +15,6 @@ toc: true
 Hugo v0.121.1 and later require at least Windows 10 or Windows Server 2016.
 {{% /note %}}
 
-{{% include "installation/_common/01-editions.md" %}}
-
 {{% include "installation/_common/02-prerequisites.md" %}}
 
 {{% include "installation/_common/03-prebuilt-binaries.md" %}}

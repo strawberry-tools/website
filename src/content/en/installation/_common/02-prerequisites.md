@@ -4,20 +4,18 @@
 
 ## Prerequisites
 
-Although not required in all cases, [Git], [Go], and [Dart Sass] are commonly used when working with Hugo.
+Although not required in all cases, [Git], [Go], and [Dart Sass] are commonly used when working with Strawberry.
 
 Git is required to:
 
-- Build Hugo from source
-- Use the [Hugo Modules] feature
+- Build Strawberry from source
 - Install a theme as a Git submodule
 - Access [commit information] from a local Git repository
 - Host your site with services such as [CloudCannon], [Cloudflare Pages], [GitHub Pages], [GitLab Pages], and [Netlify]
 
 Go is required to:
 
-- Build Hugo from source
-- Use the Hugo Modules feature
+- Build Strawberry from source
 
 Dart Sass is required to transpile Sass to CSS when using the latest features of the Sass language.
 
