@@ -4,12 +4,13 @@ orbs:
   docker: circleci/docker@2.4
   hugo: circleci/hugo@1.3
   k8s: circleci/kubernetes@1.3
+  sb: hubci/strawberry@0.8
 
 workflows:
   build-n-test-wf:
     jobs:
-      - hugo/build:
-          version: "0.125.7"
+      - sb/build:
+          version: "0.24.2"
           source: "src"
           html-proofer: false
           filters:
@@ -24,14 +25,14 @@ workflows:
           remote-docker-version: "20.10.24"
           tag: "$CIRCLE_SHA1,<< pipeline.git.branch >>,<< pipeline.number >>"
           requires:
-            - hugo/build
+            - sb/build
           filters:
             branches:
               ignore: trunk
   build-n-deploy-wf:
     jobs:
-      - hugo/build:
-          version: "0.125.7"
+      - sb/build:
+          version: "0.24.2"
           source: "src"
           html-proofer: false
           filters:
@@ -44,7 +45,7 @@ workflows:
           remote-docker-version: "20.10.24"
           tag: "$CIRCLE_SHA1,<< pipeline.git.branch >>,<< pipeline.number >>,latest"
           requires:
-            - hugo/build
+            - sb/build
           filters:
             branches:
               only: trunk
